@@ -7,13 +7,13 @@ def convert_str(s):
             pass
     return str(s).strip('\"')
 
-def read_csv(csv_file_path):
+def read_csv(dataset):
     """
         Given a path to a csv file, return a matrix (list of lists)
         in row major.
     """
     res = []
-    with open(csv_file_path, 'r') as csv_file:
+    with open(dataset, 'r') as csv_file:
         lines = csv_file.readlines()
         for line in lines:
             row = []
